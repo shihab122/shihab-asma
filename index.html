@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-hhhhhhhhhhh
   <body>
-    <p>Hello World, we are software developers!</p>
+    <h1 id="title">Page Title</h1>
+    <p id="description">Short explanation of the page.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="number" id="number-label">Number:</label>
+      <input type="number" id="number" placeholder="Enter a number between 1 and 10" min="1" max="10" required>
+
+      <label for="dropdown">Dropdown:</label>
+      <select id="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+
+      <fieldset>
+        <legend>Radio Buttons:</legend>
+        <label><input type="radio" name="radioGroup" value="option1">Option 1</label>
+        <label><input type="radio" name="radioGroup" value="option2">Option 2</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkboxes:</legend>
+        <label><input type="checkbox" name="checkboxGroup" value="option1">Option 1</label>
+        <label><input type="checkbox" name="checkboxGroup" value="option2">Option 2</label>
+      </fieldset>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
   </body>
 </html>
